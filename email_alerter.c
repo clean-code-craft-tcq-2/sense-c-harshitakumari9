@@ -1,1 +1,10 @@
 
+void emailAlerter()
+{
+  
+}
+
+void ledAlerter()
+{
+
+}
