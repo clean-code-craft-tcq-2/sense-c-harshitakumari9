@@ -21,6 +21,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.average = avg_val;
     s.min = min_val;
     s.max = max_val;
+    
+    return s;
 }
 
 int emailAlertCallCount = 0;
