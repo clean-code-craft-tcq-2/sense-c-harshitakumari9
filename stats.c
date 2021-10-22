@@ -5,7 +5,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     char size =0;
     int array_size;
     float max_val,min_val,avg_val =0;
-     max_val=min_val =numberset[size];
+     min_val =numberset[size];
+    max_val =numberset[size];
       array_size =setlength;
 
     while(setlength--)
@@ -21,6 +22,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
         avg_val +=numberset[size];
         size++;
     }
+    print("%d\n",min_val);
     s.average = avg_val/array_size;
     s.min = min_val;
     s.max = max_val;
