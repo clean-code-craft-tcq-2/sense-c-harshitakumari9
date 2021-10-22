@@ -9,11 +9,11 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     max_val =numberset[size];
       array_size =setlength;
 
-    while(setlength--)
+    while(setlength-- && size <=2)
     {
         if(numberset[size+1] <min_val)
         {
-           // min_val =numberset[size+1];
+           min_val =numberset[size+1];
         }
          if(numberset[size+1] >max_val)
         {
