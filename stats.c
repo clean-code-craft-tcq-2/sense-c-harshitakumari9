@@ -39,7 +39,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 }
 
 
-void check_and_alert(float UNUSED(maxThreshold), alerter_funcptr alerters[], struct Stats UNUSED(computedStats))
+void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
 {
     (*alerters[0])();
     (*alerters[1])();
