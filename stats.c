@@ -39,10 +39,8 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 }
 
 
-void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
+void check_and_alert(alerter_funcptr alerters[])
 {
-    maxThreshold = 0;
-    computedStats.average = 0;
     (*alerters[0])();
     (*alerters[1])();
     
