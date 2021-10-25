@@ -1,4 +1,5 @@
 #include "stats.h"
+#include "email_alerter.h"
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s;
