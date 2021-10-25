@@ -7,7 +7,7 @@ int ledAlertCallCount = 0;
 struct Stats compute_statistics(const float* numberset, int setlength) 
 {
     struct Stats s;
-    char size =0;
+    unsigned char size =0;
     int array_size;
     float max_val,min_val,avg_val =0;
     min_val =numberset[size];
